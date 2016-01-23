@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails deckmaster: development" uuid="807c33e3-3b93-4887-a9c7-f17534d30b64">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails deckmaster: production" uuid="11895ecf-c0d7-4133-bd4c-79b7ddb5daea">
+      <first-sync>true</first-sync>
+      <user-name>deckmaster</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfeedfefdfe9dfe1dfe7dfebdff9dffedfefdff8dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails deckmaster: test" uuid="24f69e96-9f31-47e2-96b3-3290724d8018">
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

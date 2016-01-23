@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails deckmaster: development" uuid="807c33e3-3b93-4887-a9c7-f17534d30b64">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails deckmaster: production" uuid="11895ecf-c0d7-4133-bd4c-79b7ddb5daea">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails deckmaster: test" uuid="24f69e96-9f31-47e2-96b3-3290724d8018">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
