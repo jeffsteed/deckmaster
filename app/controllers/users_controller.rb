@@ -14,6 +14,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # successful registration
+      log_in(@user)
       flash[:success] = "Welcome to Decksmith!"
       redirect_to @user
     else
