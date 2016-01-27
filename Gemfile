@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 gem 'bcrypt', '~> 3.1.7'
+gem 'faker', '~> 1.4.2'
+gem 'will_paginate', '~> 3.0.7'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'bootstrap-sass', '~> 3.2.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
@@ -18,6 +21,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 5.0'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -45,7 +49,13 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+  gem 'minitest-reporters', '1.0.5'
+  gem 'mini_backtrace', '0.1.3'
+  gem 'guard-minitest', '2.3.1'
+end
+
 group :production do
-  gem 'rails_12factor', '~> 0.0.2'
+  gem 'rails_12factor', '0.0.2'
   gem 'puma', '~> 2.11.1'
 end

@@ -1,6 +1,6 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-3 col-md-offset-1">
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
@@ -8,5 +8,23 @@
       </h1>
     </section>
   </aside>
+  <div class="col-md-3" id="deckOptions">
+    <div class="col-md-12" id="deckList">
+      <ul>
+        <li><h1><u>Saved Decks</u></h1></li>
+        <li><a href="#"><h2>Deck One</h2></a></li>
+        <li><a href="#"><h2>Deck Two</h2></a></li>
+        <li><a href="#"><h2>Deck Three</h2></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-3" id="create">
+    <div class="col-md-12">
+      <a href="/create_deck">
+        <div id="createDeck">
+          <h1>Create Deck</h1>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
-

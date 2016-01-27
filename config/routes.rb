@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'static_pages#home'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
@@ -6,7 +7,10 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+  get 'view_deck' => 'decks#show'
+  get 'create_deck' => 'decks#new'
   resources :users
+  resources :decks
 
 # HTTPrequest	  URL	        Action	  NamedRoute	        Purpose
 #   GET	      /users	      index	  users_path	         page to list all users
