@@ -50,3 +50,7 @@ After developing the User and Deck model, I turned my attention to the client si
 The major hurdle I faced on this project was finding an adequate API to utilize for the card images and descriptions. There were several AJAX calls used to pull in a significant amount of cards per page.
 
 Give more time, I would use ReactJS to implement an "advanced search" criteria component.
+
+#### Wireframes and User Stories
+
+![screenshot4](app/assets/images/screenshot4.png)
