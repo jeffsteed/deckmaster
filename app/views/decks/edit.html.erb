@@ -35,7 +35,7 @@
       </div>
       <div class="modal-footer">
           <%= f.button "Cancel", class: "btn btn-default", "data-dismiss" => "modal", "type" => "button" %>
-          <%= f.submit "Save Deck", class: "btn btn-primary col-md-4", id: "saveDeck" %>
+          <%= f.submit "Save Deck", class: "btn btn-primary col-md-4" %>
         <% end %>
       </div>
     </div><!-- /.modal-content -->
@@ -226,12 +226,14 @@
   document.getElementById('saveDeck').addEventListener("click", getDeck);
 
   function getDeck() {
+    console.log("getDeck called");
     var deckArray = [];
     var dropZone = document.getElementById('cardDropZone');
     var deckCards = dropZone.children;
     for (var i = 0; i < deckCards.length; i++) {
       deckArray.push(deckCards[i]["id"]);
     }
+    console.log(deckArray);
     document.getElementById('deckArray').value = deckArray;
   }
 
