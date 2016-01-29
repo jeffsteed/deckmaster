@@ -56,4 +56,4 @@ Give more time, I would use ReactJS to implement an "advanced search" criteria c
 ![screenshot4](app/assets/images/screenshot4.png)
 
 Live site on Heroku:
-[Decksmith](limitless-castle-64515.herokuapp.com)
+[Decksmith](https://limitless-castle-64515.herokuapp.com)
