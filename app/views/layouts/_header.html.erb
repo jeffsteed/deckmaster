@@ -1,7 +1,17 @@
 <header class="navbar navbar-fixed-top">
   <div class="container">
-    <%= link_to "Decksmith", root_url, id: "logo" %>
-    <nav>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Decksmith", root_url, id: "logo" %>
+    </div>
+
+    <nav class="collapse navbar-collapse" id="collapseNav">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_url %></li>
         <% if logged_in? %>

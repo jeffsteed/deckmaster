@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get 'view_deck' => 'decks#show'
   get 'create_deck' => 'decks#new'
+  post 'create_deck' => 'decks#create'
   resources :users
   resources :decks
 

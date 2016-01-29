@@ -1,6 +1,6 @@
 <% provide(:title, @user.name) %>
 <div class="row">
-  <aside class="col-md-3 col-md-offset-1">
+  <aside class="col-md-2 col-md-offset-1">
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
@@ -8,23 +8,61 @@
       </h1>
     </section>
   </aside>
-  <div class="col-md-3" id="deckOptions">
+  <div class="col-md-5" id="deckOptions">
     <div class="col-md-12" id="deckList">
-      <ul>
-        <li><h1><u>Saved Decks</u></h1></li>
-        <li><a href="#"><h2>Deck One</h2></a></li>
-        <li><a href="#"><h2>Deck Two</h2></a></li>
-        <li><a href="#"><h2>Deck Three</h2></a></li>
-      </ul>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">
+              Saved Decks
+            </th>
+            <th scope="col">
+              # of cards
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if @decks != nil %>
+            <% @decks.each do |deck| %>
+              <tr>
+                <td>
+                  <a href="<%= edit_deck_path(deck[:id]) %>"><%= deck[:name] %></a>
+                </td>
+                <td id="nums">
+                  <%= deck[:deck].length %>
+                </td>
+              </tr>
+            <% end %>
+          <% end %>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="col-md-3" id="create">
     <div class="col-md-12">
-      <a href="/create_deck">
+      <a href="<%= create_deck_path %>">
         <div id="createDeck">
-          <h1>Create Deck</h1>
+          <h1>Deck Builder</h1>
+          <!-- <%= link_to "Deck Builder", create_deck_path %> -->
         </div>
       </a>
     </div>
   </div>
 </div>
+
+<!-- <script type="text/javascript">
+  window.tdiff = []; fred = function(a,b){return a-b;};
+  window.document.onload = function(e){
+    console.log("document.onload", e, Date.now() ,window.tdiff,
+    (window.tdiff[0] = Date.now()) && window.tdiff.reduce(fred) );
+  }
+  window.onload = function(e){
+    console.log("window.onload", e, Date.now() ,window.tdiff,
+    (window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) );
+  }
+  $(document).ready(function(e) {
+    console.log("$(document).ready()", e, Date.now() ,window.tdiff,
+    (window.tdiff[1] = Date.now()) && window.tdiff.reduce(fred) );
+  });
+</script> -->
