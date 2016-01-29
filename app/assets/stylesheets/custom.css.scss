@@ -17,6 +17,8 @@ $gray-medium-light: #eaeaea;
 body {
   padding-top: 60px;
   // background-image: url("logo.png");
+  // background-repeat: no-repeat;
+  // background-position: top;
 }
 
 #bodyContainer {
@@ -250,11 +252,17 @@ input {
   display: inline-block;
 }
 
+.glyphicon.close:hover {
+  transition: {
+    font-size: 2em;
+  }
+}
+
 .glyphicon-remove {
   color: white;
   &:hover {
     cursor: pointer;
-    color: red;
+    color: tomato;
   }
 }
 

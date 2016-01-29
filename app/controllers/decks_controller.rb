@@ -23,7 +23,7 @@ class DecksController < ApplicationController
     @deck = Deck.find_by(id: params[:id])
     new_deck = params[:deck][:deck].split(',')
     if @deck.update_attributes(deck: new_deck)
-      flash[:succes] = "Deck Saved Successfully"
+      flash[:success] = "Deck Saved Successfully"
       redirect_to @user
     else
       render "edit"
